@@ -1,0 +1,87 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Experimente a nova plataforma cruzada PowerShell https://aka.ms/pscore6
+
+PS C:\Users\GAMER i7> cd ssh
+PS C:\Users\GAMER i7\ssh> ssh -i "eixo5-2026.pem" ubuntu@ec2-98-87-11-13.compute-1.amazonaws.com
+The authenticity of host 'ec2-98-87-11-13.compute-1.amazonaws.com (98.87.11.13)' can't be established.
+ED25519 key fingerprint is SHA256:dN9LsNiyQlwyT4dSXUaTAsWkrKeyojqyn2ku640SYxc.
+This host key is known by the following other names/addresses:
+    C:\Users\GAMER i7/.ssh/known_hosts:1: ec2-3-81-160-56.compute-1.amazonaws.com
+    C:\Users\GAMER i7/.ssh/known_hosts:4: ec2-52-90-137-151.compute-1.amazonaws.com
+    C:\Users\GAMER i7/.ssh/known_hosts:5: ec2-34-204-75-7.compute-1.amazonaws.com
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'ec2-98-87-11-13.compute-1.amazonaws.com' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.17.0-1012-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon May  4 23:34:41 UTC 2026
+
+  System load:  0.02              Temperature:           -273.1 C
+  Usage of /:   34.5% of 6.71GB   Processes:             116
+  Memory usage: 26%               Users logged in:       0
+  Swap usage:   0%                IPv4 address for ens5: 172.31.32.192
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+22 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Mon Apr 27 23:56:33 2026 from 201.80.24.140
+ubuntu@ip-172-31-32-192:~$ nano server-stats.sh
+ubuntu@ip-172-31-32-192:~$ ubuntu@ip-172-31-32-192:~$ chmod +x server-stats.sh
+ubuntu@ip-172-31-32-192:~$ ./server-stats.sh
+===== SERVER PERFORMANCE STATS =====
+
+>> CPU Usage:
+CPU Used: 4.5%
+
+>> Memory Usage:
+Used: 374MB | Free: 370MB | Usage: 41.05%
+
+>> Disk Usage:
+Used: 2.4G | Free: 4.4G | Usage: 35%
+
+>> Top 5 Processes by CPU:
+    PID    PPID CMD                         %MEM %CPU
+      1       0 /sbin/init                   1.4  0.5
+    527       1 /snap/amazon-ssm-agent/1300  2.6  0.3
+    530       1 /usr/lib/snapd/snapd         3.9  0.1
+    122       1 /usr/lib/systemd/systemd-jo  1.5  0.1
+    184       1 /usr/lib/systemd/systemd-ud  0.8  0.0
+
+>> Top 5 Processes by Memory:
+    PID    PPID CMD                         %MEM %CPU
+    530       1 /usr/lib/snapd/snapd         3.9  0.1
+    181       1 /sbin/multipathd -d -s       2.9  0.0
+    527       1 /snap/amazon-ssm-agent/1300  2.6  0.3
+    670       1 /usr/bin/python3 /usr/share  2.4  0.0
+    521       1 /usr/bin/python3 /usr/bin/n  2.2  0.0
+
+>> Uptime:
+ 23:36:42 up 3 min,  1 user,  load average: 0.08, 0.02, 0.01
+
+>> OS Version:
+Distributor ID: Ubuntu
+Description:    Ubuntu 24.04.4 LTS
+Release:        24.04
+Codename:       noble
+
+>> Logged in users:
+ubuntu   pts/0        2026-05-04 23:34 (201.80.24.140)
+
+====================================
+ubuntu@ip-172-31-32-192:~$
